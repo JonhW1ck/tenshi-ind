@@ -131,8 +131,7 @@
     .modulos-separador { text-align:center; padding:32px 24px 8px; }
     .modulos-separador span { font-family:'Share Tech Mono',monospace; font-size:11px; letter-spacing:4px; color:rgba(204,34,0,0.6); }
     .modulos-separador.ii span { color:var(--dorado); }
-    .features-solo { grid-template-columns:1fr; }
-    .features-solo .feature { max-width:640px; margin:0 auto; }
+    .features-dos { grid-template-columns:repeat(2,1fr); }
     footer { padding:20px 48px; display:flex; justify-content:space-between; align-items:center; backdrop-filter:blur(10px); }
     .footer-marca { display:flex; align-items:center; gap:10px; }
     .footer-kanji { font-family:'Noto Serif JP',serif; font-size:14px; color:rgba(204,34,0,0.4); }
@@ -179,9 +178,9 @@
       <p class="hero-subtitle-kanji">Procesos de Separación</p>
       <p class="hero-desc">
         Solucionario inteligente de <strong>procesos de separación</strong>.<br>
-        Torres de absorción, interacción aire-agua, secado y adsorción en lecho fijo —
-        <strong>4 módulos de cálculo</strong> con detección automática de variables.
-        Paso a paso, con IA.
+        Torres de absorción, interacción aire-agua, secado, adsorción en lecho fijo y
+        extracción/lixiviación — <strong>5 módulos de cálculo</strong> con detección
+        automática de variables. Paso a paso, con IA.
       </p>
       <div class="hero-btns">
         <a href="#modulos" class="btn-primary">→ ABRIR APP</a>
@@ -190,7 +189,7 @@
       </div>
     </div>
     <div class="stats">
-      <div class="stat"><span class="stat-num">4</span><span class="stat-label">MÓDULOS DE CÁLCULO</span></div>
+      <div class="stat"><span class="stat-num">5</span><span class="stat-label">MÓDULOS DE CÁLCULO</span></div>
       <div class="stat"><span class="stat-num">2</span><span class="stat-label">FORMATOS DE EXPORTE</span></div>
       <div class="stat"><span class="stat-num">100%</span><span class="stat-label">GRATIS</span></div>
       <div class="stat"><span class="stat-num">IA</span><span class="stat-label">POWERED BY GROQ</span></div>
@@ -222,12 +221,18 @@
     <div class="modulos-separador ii">
       <span>PROCESOS DE SEPARACIÓN II</span>
     </div>
-    <div class="features features-solo">
+    <div class="features features-dos">
       <div class="feature">
         <span class="feature-num">04 — MÓDULO</span>
         <h3 class="feature-title">Adsorción en Lecho Fijo</h3>
         <p class="feature-desc">Diseño de lechos empacados con carbón activado: isoterma de equilibrio, caída de presión vía Ergun y verificación del ciclo adsorción-regeneración.</p>
         <a href="https://adsorcion.streamlit.app/" target="_blank" class="btn-primary">Abrir →</a>
+      </div>
+      <div class="feature">
+        <span class="feature-num">05 — MÓDULO</span>
+        <h3 class="feature-title">Extracción y Lixiviación</h3>
+        <p class="feature-desc">Extracción líquido-líquido cross-current y lixiviación contracorriente: coordenadas de Ponchon, balance de etapas verificado.</p>
+        <a href="https://extraccion-lixiviacion.streamlit.app/" target="_blank" class="btn-primary">Abrir →</a>
       </div>
     </div>
     <div class="features">
